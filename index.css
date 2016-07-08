@@ -1,0 +1,47 @@
+body {
+  background-color: burlywood;
+}
+
+
+comics {
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+
+comic {
+  display: block;
+  max-width: 100%;
+  max-height: 60%;
+  border-bottom: 3px solid black;
+
+}
+
+comic-title {
+  display: block;
+  width: 80%;
+  
+
+}
+
+price-tag {
+  display: block;
+  width: 80%;
+
+}
+
+img {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  height: 550px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+p {
+  color: red;
+}

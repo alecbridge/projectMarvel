@@ -29,4 +29,59 @@ var marvel = marvelFactory({
   version: '1'
 });
 
+//  STRUCTURE OUTLINE (BODY BY API)
+//    <comics>
+//
+//      <comic>
+//        <thumbnail> </thumbnail>
+//        <title>  </title>
+//        <description> </description>
+//      </comic>
+
+//      <comic>
+//        <thumbnail> </thumbnail>
+//        <title>  </title>
+//        <description> </description>
+//      </comic>
+
+//      <comic>
+//        <thumbnail> </thumbnail>
+//        <title>  </title>
+//        <description> </description>
+//      </comic>
+//     
+//    </comics>
+
+marvel('/comics').then(function(json){
+json.data.results.map(function(comic){
+
+var comicContainer= document.createElement('comic')
+
+var imgPath = comic.thumbnail.path + '.' + comic.thumbnail.extension;
+var comicTitle = comic.title;
+var prices = comic.prices[0].price;
+
+var img = document.createElement('img');
+img.setAttribute('src', imgPath);
+
+var titleTag = document.createElement('comic-title');
+var priceTag = document.createElement('price-tag');
+
+var titleTextNode = document.createTextNode(comicTitle);
+var priceTextNode = document.createTextNode(' $' + prices);
+//var nameLinkNode  (line 80-82 of Jims promises -add if you want links)
+titleTag.appendChild(titleTextNode);
+priceTag.appendChild(priceTextNode);
+
+comicContainer.appendChild(titleTag);
+comicContainer.appendChild(priceTag);
+comicContainer.appendChild(img);
+
+var container = document.querySelector('comics');
+container.appendChild(comicContainer);
+
+
+  });
+});
+
 console.log('Hello Friends, Test Text')
