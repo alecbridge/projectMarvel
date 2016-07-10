@@ -35,19 +35,19 @@ var marvel = marvelFactory({
 //      <comic>
 //        <thumbnail> </thumbnail>
 //        <title>  </title>
-//        <description> </description>
+//        <price> </price>
 //      </comic>
 
 //      <comic>
 //        <thumbnail> </thumbnail>
 //        <title>  </title>
-//        <description> </description>
+//        <price> </price>
 //      </comic>
 
 //      <comic>
 //        <thumbnail> </thumbnail>
 //        <title>  </title>
-//        <description> </description>
+//        <price> </price>
 //      </comic>
 //     
 //    </comics>
@@ -71,7 +71,7 @@ var buybtn = document.createElement('buybtn');
 var buyTextNode = document.createTextNode('BUY');
 var titleTextNode = document.createTextNode(comicTitle);
 var priceTextNode = document.createTextNode('Price: $' + prices);
-//var nameLinkNode  (line 80-82 of Jims promises -add if you want links)
+
 titleTag.appendChild(titleTextNode);
 priceTag.appendChild(priceTextNode);
 buybtn.appendChild(buyTextNode);
@@ -81,10 +81,8 @@ comicContainer.appendChild(titleTag);
 comicContainer.appendChild(priceTag);
 comicContainer.appendChild(buybtn);
 
-
 var container = document.querySelector('comics');
 container.appendChild(comicContainer);
-
 
   });
 });

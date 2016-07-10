@@ -10,7 +10,6 @@ body {
   max-height: 100%;
 }
 
-
 comics {
   background-color: white;
   display: block;
@@ -20,7 +19,6 @@ comics {
   clear: both;
   overflow: auto;
 }
-
 
 comic {
   display: block;
@@ -82,7 +80,6 @@ buybtn:hover{
 
 }
 
-
 img {
   float: left;
   display: block;
@@ -93,7 +90,6 @@ img {
   margin-top: 2px;
   border-right: 1px solid lightgrey;
 }
-
 
 .page-top {
   max-width: 100%;
