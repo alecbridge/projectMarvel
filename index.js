@@ -66,16 +66,21 @@ img.setAttribute('src', imgPath);
 
 var titleTag = document.createElement('comic-title');
 var priceTag = document.createElement('price-tag');
+var buybtn = document.createElement('buybtn');
 
+var buyTextNode = document.createTextNode('BUY');
 var titleTextNode = document.createTextNode(comicTitle);
-var priceTextNode = document.createTextNode(' $' + prices);
+var priceTextNode = document.createTextNode('Price: $' + prices);
 //var nameLinkNode  (line 80-82 of Jims promises -add if you want links)
 titleTag.appendChild(titleTextNode);
 priceTag.appendChild(priceTextNode);
+buybtn.appendChild(buyTextNode);
 
+comicContainer.appendChild(img);
 comicContainer.appendChild(titleTag);
 comicContainer.appendChild(priceTag);
-comicContainer.appendChild(img);
+comicContainer.appendChild(buybtn);
+
 
 var container = document.querySelector('comics');
 container.appendChild(comicContainer);
