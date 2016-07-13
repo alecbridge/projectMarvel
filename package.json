@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    // Adding that server and or start script makes running your site a lot easier
+    // a la:
+    // "serve": "http-server",
+    // "start": "npm run serve",
   },
   "repository": {
     "type": "git",

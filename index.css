@@ -47,7 +47,7 @@ comic-title {
   padding-bottom: 25px;
   color: whitesmoke;
   text-shadow:
-  -5px -1px 0 #000,  
+  -5px -1px 0 #000,
    1px -1px 0 #000,
   -1px 1px 0 #000,
    1px 1px 0 #000;
@@ -101,7 +101,7 @@ marvel-heroes {
   display: block;
   max-width: 100%;
   max-height: 80%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 marvel-heroes > img {

@@ -18,7 +18,7 @@ function marvelFactory(config) {
     console.log(url);
 
     return fetchJSON(url);
-  }
+  }; //missing semicolon?
 }
 
 // Get an instance of the marvel api
@@ -49,13 +49,14 @@ var marvel = marvelFactory({
 //        <title>  </title>
 //        <price> </price>
 //      </comic>
-//     
+//
 //    </comics>
 
+// in this section I used some of the $. $.create $.createText to eliminate some of the document.createElement etc. Not sure that it really matters much but thought I'd point that out.
 marvel('/comics').then(function(json){
 json.data.results.map(function(comic){
 
-var comicContainer= document.createElement('comic')
+var comicContainer= document.createElement('comic'); //missing semicolon
 
 var imgPath = comic.thumbnail.path + '.' + comic.thumbnail.extension;
 var comicTitle = comic.title;
@@ -87,4 +88,4 @@ container.appendChild(comicContainer);
   });
 });
 
-console.log('Hello Friends, Test Text')
+console.log('Hello Friends, Test Text'); //missing semicolon
